@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"vl5310_hhc\startup_stm32f103xe.o"
+"vl5310_hhc\main.o"
+"vl5310_hhc\gpio.o"
+"vl5310_hhc\i2c.o"
+"vl5310_hhc\usart.o"
+"vl5310_hhc\stm32f1xx_it.o"
+"vl5310_hhc\stm32f1xx_hal_msp.o"
+"vl5310_hhc\vl53l0x.o"
+"vl5310_hhc\stm32f1xx_hal_gpio_ex.o"
+"vl5310_hhc\stm32f1xx_hal_i2c.o"
+"vl5310_hhc\stm32f1xx_hal.o"
+"vl5310_hhc\stm32f1xx_hal_rcc.o"
+"vl5310_hhc\stm32f1xx_hal_rcc_ex.o"
+"vl5310_hhc\stm32f1xx_hal_gpio.o"
+"vl5310_hhc\stm32f1xx_hal_dma.o"
+"vl5310_hhc\stm32f1xx_hal_cortex.o"
+"vl5310_hhc\stm32f1xx_hal_pwr.o"
+"vl5310_hhc\stm32f1xx_hal_flash.o"
+"vl5310_hhc\stm32f1xx_hal_flash_ex.o"
+"vl5310_hhc\stm32f1xx_hal_exti.o"
+"vl5310_hhc\stm32f1xx_hal_uart.o"
+"vl5310_hhc\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "vl5310_hhc\vl5310_hhc.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "vl5310_hhc.map" -o vl5310_hhc\vl5310_hhc.axf
